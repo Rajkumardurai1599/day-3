@@ -2,9 +2,13 @@
 let a= {name:"person1",age:5};  
 let b = {age:5,name:"person1"};
 
+let c= JSON.stringify(Object.is(a,b))
+console.log(c);
 
 
-let c= JSON.stringify(a,Object.keys(a).reverse())
+
+
+/*let c= JSON.stringify(a,Object.keys(a).reverse())
 console.log(c);
 let d=JSON.stringify(b,Object.keys(b))
 console.log(d);
@@ -15,6 +19,7 @@ if (c===d){
 else {
     console.log("json is not equal");
 }
+*/
 
 
 
